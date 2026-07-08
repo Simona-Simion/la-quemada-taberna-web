@@ -3,7 +3,7 @@ import SectionHeader from '../components/SectionHeader'
 
 function Location() {
   return (
-    <section id="ubicacion" className="px-6 py-20">
+    <section id="ubicacion" className="scroll-mt-32 px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           eyebrow="Ubicación"

@@ -3,7 +3,7 @@ import { menuInfo } from '../data/menu'
 
 function MenuSection() {
   return (
-    <section id="carta" className="px-6 py-20">
+    <section id="carta" className="scroll-mt-32 px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           eyebrow={menuInfo.eyebrow}

@@ -2,7 +2,7 @@ import SectionHeader from '../components/SectionHeader'
 
 function Gallery() {
   return (
-    <section id="galeria" className="px-6 py-20">
+    <section id="galeria" className="scroll-mt-32 px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           eyebrow="Galería"

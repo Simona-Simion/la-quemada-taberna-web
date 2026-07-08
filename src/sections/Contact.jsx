@@ -3,7 +3,7 @@ import SectionHeader from '../components/SectionHeader'
 
 function Contact() {
   return (
-    <section id="contacto" className="px-6 py-20">
+    <section id="contacto" className="scroll-mt-32 px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           eyebrow="Contacto"
