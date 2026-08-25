@@ -1,37 +1,55 @@
 export const menuInfo = {
   eyebrow: 'Nuestra carta',
-  title: 'Comer, beber y compartir en barra.',
+  title: 'Lo que se sirve en La Quemada.',
   description:
-    'Consulta nuestras cartas completas y descubre una propuesta pensada para picar, compartir y acompañar con buen vino.',
+    'Cartas completas, producto de taberna y vinos pensados para acompañar.',
+
+  suggestions: {
+    eyebrow: 'Fuera de carta',
+    title: 'Sugerencias de la semana',
+    description:
+      'Además de la carta, preparamos propuestas que cambian según producto y temporada.',
+    note: 'Pregunta al personal por las sugerencias disponibles hoy.',
+  },
 
   pdfs: [
     {
-    title: 'Carta de comida',
-    subtitle: 'Producto, barra y platos para compartir',
-    url: '/pdf/CARTA%20LA%20QUEMADA.pdf',
-    buttonText: 'Ver carta de comida',
-    image: '/images/carta/carta-comida.jpg',
-    seal: '/images/brand/sello-producto-tradicion.png',
-    sealAlt: 'Producto, cercanía y tradición',
-  },
-  {
-    title: 'Carta de vinos',
-    subtitle: 'Vinos, copas y bodega de la casa',
-    url: '/pdf/CARTA%20VINOS%20LA%20QUEMADA.pdf',
-    buttonText: 'Ver carta de vinos',
-    image: '/images/carta/carta-vinos.jpg',
-    seal: '/images/brand/sello-bodega.png',
-    sealAlt: 'La Quemada Bodega',
-  },
-  ],
+      badge: 'Comida',
+      title: '',
+      subtitle:
+        'Aperitivos, curados, centros y platos de taberna.',
+      url: '/pdf/CARTA%20LA%20QUEMADA.pdf',
+      buttonText: 'Abrir carta de comida',
 
-  highlights: [
-    'Gildas y aperitivos de barra',
-    'Curados y producto para compartir',
-    'Centros y platos de taberna',
-    'Vinos para acompañar sin complicarse',
+      image: {
+        mobile:
+          '/images/carta/carta-comida-mobile.webp',
+        desktop:
+          '/images/carta/carta-comida-desktop.webp',
+      },
+
+      featured: true,
+    },
+    {
+      badge: 'Bodega',
+      title: '',
+      subtitle:
+        'Copas, botellas y referencias para acompañar la visita.',
+      url:
+        '/pdf/CARTA%20VINOS%20LA%20QUEMADA.pdf',
+      buttonText: 'Abrir carta de vinos',
+
+      image: {
+        mobile:
+          '/images/carta/carta-bodega-mobile.webp',
+        desktop:
+          '/images/carta/carta-bodega-desktop.webp',
+      },
+
+      featured: false,
+    },
   ],
 
   note:
-    'La carta puede variar según disponibilidad y producto del día. Consulta en barra si tienes dudas sobre alérgenos.',
+    'La oferta puede variar según disponibilidad y producto del día. Consulta con nuestro personal si necesitas información sobre alérgenos.',
 }

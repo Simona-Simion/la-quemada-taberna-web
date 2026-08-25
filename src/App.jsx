@@ -1,28 +1,30 @@
+import Seo from './components/Seo'
+
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
-import History from './sections/History'
 import MenuSection from './sections/MenuSection'
 import Gallery from './sections/Gallery'
 import Reviews from './sections/Reviews'
 import Location from './sections/Location'
-import Contact from './sections/Contact'
+import EventsSection from './sections/EventsSection'
 import Footer from './sections/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#11100e] text-[#f5efe6]">
+    <div className="min-h-screen bg-[#18130f] text-[#f5efe6]">
+      <Seo />
+
       <Navbar />
 
       <main>
         <Hero />
         <About />
-        <History />
-        <MenuSection />
         <Gallery />
-        <Reviews />
+        <MenuSection />
+        <EventsSection />
         <Location />
-        <Contact />
+        <Reviews />
       </main>
 
       <Footer />
