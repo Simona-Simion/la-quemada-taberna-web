@@ -46,16 +46,19 @@ export const tavernInfo = {
     tradeName: "La Quemada Taberna",
 
     // Persona autónoma o razón social titular del negocio
-    legalName: "Jorge Álvarez Gil",
+    legalName: "BARRIO RESTAURACION, SOCIEDAD LIMITADA",
 
     // NIF de la persona titular o de la sociedad
     taxId: "B26720342",
 
     // Por ejemplo: Autónomo, Sociedad Limitada...
-    legalForm: "Empresario individual (autónomo)",
+    legalForm: "Sociedad Limitada (S.L.)",
 
     // Domicilio que deba constar legalmente
-    legalAddress: "C. de Antonio Agustín, 24, Casco Antiguo, 50002 Zaragoza",
+    legalAddress: "CL. LA TORRE, 24 03 Pta. B - 50002 Zaragoza (Zaragoza)",
+
+
+    registryDetails:"Registro Mercantil de Zaragoza,Sección 8, Hoja Z-77590, Inscripción 1.",
 
 
     // Correo para consultas legales y de privacidad
