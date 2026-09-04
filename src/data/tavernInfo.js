@@ -46,7 +46,7 @@ export const tavernInfo = {
     tradeName: "La Quemada Taberna",
 
     // Persona autónoma o razón social titular del negocio
-    legalName: "BARRIO RESTAURACION, SOCIEDAD LIMITADA",
+    legalName: "BARRIO RESTAURACION SOCIEDAD LIMITADA",
 
     // NIF de la persona titular o de la sociedad
     taxId: "B26720342",
@@ -58,22 +58,13 @@ export const tavernInfo = {
     legalAddress: "CL. LA TORRE, 24 03 Pta. B - 50002 Zaragoza (Zaragoza)",
 
 
-    registryDetails:"Registro Mercantil de Zaragoza,Sección 8, Hoja Z-77590, Inscripción 1.",
+    registryDetails:"Registro Mercantil de Zaragoza, Sección 8, Hoja Z-77590, Inscripción 1.",
 
 
     // Correo para consultas legales y de privacidad
     privacyEmail: "laquemadataberna@gmail.com",
   },
 
-  /* history: {
-  eyebrow: 'Historia y barrio',
-  title: ' Un nombre con historia, una barra con alma',
-  paragraphs: [
-    'La Quemada toma su nombre de la antigua Puerta Quemada, situada entre las actuales calles Asalto y Heroísmo.',
-    'Su nombre se relaciona con los carboneros que se reunían junto a ella y con el humo de sus hogueras, que ennegrecía la puerta hasta hacerla parecer quemada.',
-    'Hoy, Jorge y Fernando recogen ese guiño al barrio y lo llevan a la barra: una taberna pequeña, cercana y con buen producto, donde la tradición no se cuenta solo en las paredes, también se sirve en cada plato.',
-    ],
-   },*/
 
   instagram: {
     username: "@laquemadataberna",

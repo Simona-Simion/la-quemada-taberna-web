@@ -149,7 +149,7 @@ const en = {
     instagramAction: "Follow us on Instagram",
 
     hours: {
-       weekday: "Tuesday to Thursday: 8:00 pm - 12:00 am",
+      weekday: "Tuesday to Thursday: 8:00 pm - 12:00 am",
       saturday: "Friday and Saturday: 12:00 pm - 4:00 pm / 8:00 pm - 12:00 am",
       sunday: "Sunday and Monday: Closed",
     },
@@ -206,64 +206,70 @@ const en = {
 
   legalNotice: {
     eyebrow: "Legal information",
-    title: "Legal notice",
+    title: "Legal Notice",
 
     identification: {
-      title: "Proprietor identification",
-      tradeName: "Trading name",
-      legalName: "Proprietor",
+      title: "Website owner identification",
+      tradeName: "Trade name",
+      legalName: "Legal entity",
       taxId: "Tax identification number",
       legalForm: "Legal form",
-      address: "Address",
+      address: "Registered address",
       email: "Email address",
-      registry: "Registration details",
+      registry: "Company registry details",
     },
 
     purpose: {
       title: "Purpose of the website",
       description:
-        "This website provides information about {{tradeName}}, its food and drink offering, menus, opening hours, location, contact methods, gatherings and celebrations.",
+        "This website is intended to provide information about {{tradeName}}, its food and drink offering, menus, opening hours, location, contact methods, gatherings and celebrations.",
     },
 
     usage: {
       title: "Terms of use",
       description:
-        "Users must use this website lawfully, responsibly and respectfully. They must not take actions that could damage, overload or prevent its normal operation, or use its content for unlawful purposes.",
+        "Users agree to use this website lawfully, responsibly and respectfully. Users must not take any action that could damage, overload, alter or prevent the normal operation of the website, or use its content for unlawful purposes or in breach of applicable law.",
     },
 
     content: {
       title: "Content and availability",
       description:
-        "Every effort is made to keep the information clear and current, but menus, prices, opening hours, specials and product availability may change. The information provided directly by the establishment will be definitive.",
+        "Every effort is made to ensure that the information published on this website is clear, accurate and up to date. However, menus, prices, opening hours, suggestions, products and other information relating to the establishment may change. In the event of any discrepancy, the information provided directly by the establishment shall prevail.",
     },
 
     intellectualProperty: {
       title: "Intellectual and industrial property",
       description:
-        "Unless otherwise stated, the texts, design, structure, illustrations, photographs and original content of this website are protected by applicable law. They may not be reproduced or used without authorisation, except where permitted by law.",
+        "Unless expressly stated otherwise, the texts, designs, images, photographs, illustrations, logos, structure and other original content of this website are protected by applicable intellectual and industrial property laws. They may not be reproduced, distributed, transformed or used without authorisation, except where permitted by law.",
     },
 
     externalLinks: {
-      title: "External links",
+      title: "External services and links",
       description:
-        "This website includes links to external services such as Google Maps, Instagram and WhatsApp. They are provided only to assist users. The relevant provider’s terms and policies apply when those links are opened.",
+        "The website uses Sanity to retrieve and serve certain content, including menu PDF files. It also contains links to external services such as Google Maps, Instagram and WhatsApp. These linked services are not loaded merely by visiting this website; when you voluntarily open their links, they may use their own cookies or other technologies in accordance with their respective policies.",
+    },
+
+    liability: {
+      title: "Liability",
+      description:
+        "The website owner does not guarantee uninterrupted availability of the website or the complete absence of technical errors. The owner shall not be liable for damage arising from interruptions, technical incidents, actions of third parties or improper use of the website by users, without prejudice to any liability that cannot legally be excluded.",
     },
 
     law: {
       title: "Applicable law",
       description:
-        "This website and this legal notice are governed by Spanish law, without prejudice to any other mandatory rules that may apply.",
+        "This website and this Legal Notice are governed by Spanish law, without prejudice to any other mandatory legislation that may apply.",
     },
   },
 
   privacyPolicy: {
     eyebrow: "Data protection",
-    title: "Privacy policy",
+    title: "Privacy Policy",
 
     responsible: {
       title: "Data controller",
-      tradeName: "Trading name",
-      legalName: "Proprietor",
+      tradeName: "Trade name",
+      legalName: "Legal entity",
       address: "Address",
       email: "Privacy email",
     },
@@ -273,118 +279,125 @@ const en = {
       intro:
         "Depending on how you use the website, the following categories of data may be processed:",
       contact:
-        "Information you voluntarily send by email, such as your name, email address, enquiry and any other information included in the message.",
+        "Data that you voluntarily provide by email, such as your name, email address, the content of your enquiry and any other information included in the message.",
       whatsapp:
-        "If you contact us through WhatsApp, your telephone number, profile name or alias, message content and any other information you choose to provide may be processed.",
+        "If you choose to contact us through WhatsApp, your telephone number, profile name or alias, the content of the conversation and any other information you choose to provide may be processed.",
       technical:
-        "Minimum technical data required to deliver and protect the website and PDF menus, such as IP address, browser, date, time and request logs managed by technical providers.",
+        "Minimum technical data necessary to serve, maintain and protect the website and its content, such as IP address, browser, date, time and technical request logs handled by infrastructure providers.",
       language:
-        "The selected language preference is stored only in the browser and is not sent to the establishment’s proprietor.",
+        "Your selected language preference is stored only in your browser's local storage and is not used to identify you or track your activity.",
     },
 
     purposes: {
-      title: "Purposes",
+      title: "Purposes of processing",
       contact:
-        "To answer enquiries, requests about groups or celebrations and other communications sent by email.",
+        "To receive and respond to enquiries, requests for information and communications sent by email.",
       whatsapp:
-        "To answer enquiries about groups, gatherings and celebrations sent through WhatsApp.",
+        "To receive and manage enquiries voluntarily sent through WhatsApp, including enquiries relating to groups, gatherings and celebrations.",
       security:
-        "To maintain the website’s operation, availability and technical security.",
-      language: "To remember the language selected by the user.",
+        "To maintain the operation, availability, integrity and technical security of the website and its content.",
+      language:
+        "To remember the language selected by the user and make future visits easier.",
     },
 
     legalBasis: {
       title: "Legal basis",
       description:
-        "Enquiries sent by email or WhatsApp are handled following the data subject’s voluntary request and, where relevant, to take steps before entering into a contract. Essential technical processing is based on the legitimate interest in maintaining a secure and operational website. The language preference is stored after the user makes an explicit choice.",
+        "The processing of data provided by email or WhatsApp is based on the request voluntarily made by the data subject and, where applicable, on taking pre-contractual steps requested by that person. The processing of strictly necessary technical data is based on the legitimate interest in keeping the website secure, available and operational. The language preference is stored as a result of the user's own choice.",
     },
 
     whatsapp: {
-      title: "WhatsApp enquiries",
+      title: "Enquiries via WhatsApp",
       description:
-        "When you choose this channel, the conversation takes place through WhatsApp. La Quemada processes the information received to reply to and manage the enquiry. WhatsApp Ireland Limited provides the service in the European Region and applies its own privacy policy.",
+        "If you choose to contact us through WhatsApp, the communication will take place through that service. La Quemada Taberna will process the data received solely to respond to and manage your enquiry. WhatsApp applies its own terms and privacy policy when its service is used.",
     },
 
     recipients: {
-      title: "Recipients and providers",
+      title: "Recipients and service providers",
       description:
-        "Data is not sold. Technical or contact information may only be accessed by providers required to operate the service, such as web hosting, email and Sanity for managing and serving the PDF menus. When WhatsApp is used, the communication also passes through that service. Each provider applies its contractual and legal obligations. Data may also be disclosed where required by law.",
+        "Personal data is not sold or disclosed for commercial purposes. Certain data may be accessed by providers necessary to operate and maintain the services used by the website, such as Netlify for website hosting and infrastructure, Sanity for managing and delivering certain content and PDF files, and the email provider for receiving and managing communications. If you use WhatsApp, the data necessary for the communication will also be processed through that service. Data may also be disclosed where required by law.",
+    },
+
+    internationalTransfers: {
+      title: "International data transfers",
+      description:
+        "Some technology providers used may process data from countries outside the European Economic Area. Where international transfers of personal data take place, they must be carried out in accordance with the General Data Protection Regulation on the basis of an adequacy decision by the European Commission or other legally recognised safeguards, as applicable.",
     },
 
     retention: {
       title: "Retention periods",
       description:
-        "Enquiries are kept for as long as necessary to reply and manage the communication. If a commercial relationship arises, information may be retained for the applicable statutory periods. Technical logs are retained for the periods set by the necessary providers for security and operation.",
+        "Data sent by email or WhatsApp will be retained for as long as necessary to respond to and manage the enquiry. If the communication results in a commercial relationship or legal obligation, the data may be retained for the periods required by applicable law. Technical logs will be retained for the periods necessary for the operation and security of the service, in accordance with the relevant providers' policies.",
     },
 
     rights: {
       title: "Your rights",
       description:
-        "You may request access, rectification, erasure, objection, restriction or portability where applicable by writing to {{privacyEmail}}. Additional information may be requested to verify the identity of the person exercising the right.",
+        "You may request access to your personal data, its rectification or erasure, as well as restriction of or objection to processing and data portability where applicable, by writing to {{privacyEmail}}. Where necessary, additional information may be requested to verify the identity of the person exercising the right.",
     },
 
     externalServices: {
       title: "External services and links",
       description:
-        "The website uses Sanity to retrieve the menus and contains links to Google Maps, Instagram and WhatsApp. External services apply their own policies when a connection is made to them or one of their links is opened.",
+        "The website uses Sanity to retrieve certain content and contains links to external services such as Google Maps, Instagram and WhatsApp. When you voluntarily access those links, any subsequent processing of personal data will be governed by the terms and privacy policies of the relevant provider.",
     },
 
     complaint: {
       title: "Complaints",
       description:
-        "If you believe your data has not been processed appropriately, you may lodge a complaint with the Spanish Data Protection Agency.",
+        "If you believe that the processing of your personal data does not comply with applicable data protection law, you may lodge a complaint with the Spanish Data Protection Agency (Agencia Española de Protección de Datos).",
     },
 
     changes: {
       title: "Changes to this policy",
       description:
-        "This policy will be updated whenever the services, providers or data-processing activities used by the website change.",
+        "This policy may be updated when the services, providers, data processing activities or applicable legal requirements change.",
     },
   },
 
   cookiePolicy: {
     eyebrow: "Privacy and storage",
-    title: "Cookie policy",
+    title: "Cookie Policy",
 
     currentUse: {
-      title: "Current use of cookies",
+      title: "Use of cookies",
       description:
-        "Under the current implementation, this website does not set first-party or third-party cookies for analytics, advertising, tracking or personalisation.",
+        "This website does not use first-party or third-party cookies for analytics, advertising, tracking or personalisation purposes.",
     },
 
     localStorage: {
       title: "Language preference",
       description:
-        "When you explicitly choose a language, the website stores the key “{{storageKey}}” in your browser’s local storage. Its sole purpose is to remember that choice on future visits. It does not contain your name, email address or other identifying information and is not used to track your activity.",
+        "When you expressly select a language, the website stores the key “{{storageKey}}” in your browser's local storage. Its sole purpose is to remember your choice on future visits. This preference does not contain your name, email address or other identifying information and is not used to track your activity.",
     },
 
     consent: {
       title: "Consent banner",
       description:
-        "No banner is displayed because the current configuration does not use cookies requiring consent. If analytics, advertising or other non-essential technologies are added in the future, consent will be requested before they are activated.",
+        "A consent banner is not currently displayed because the website does not use cookies or similar technologies that require consent. If analytics, advertising or other technologies requiring consent are introduced in the future, consent will be requested before they are activated.",
     },
 
     externalLinks: {
-      title: "External services",
+      title: "External services and links",
       description:
-        "Links to Google Maps, Instagram and WhatsApp may lead to services that use their own cookies or technologies. Those technologies belong to the relevant providers and only apply when their services are accessed. The WhatsApp link does not set cookies on this website before the user opens it. Sanity is used to serve the PDF menus and its technical behaviour will be checked again before publication.",
+        "The website uses Sanity to retrieve and serve certain content, including menu PDF files. It also contains links to external services such as Google Maps, Instagram and WhatsApp. When you voluntarily access these links, those services may use their own cookies or other technologies in accordance with their respective policies. These services are not loaded on this website merely by visiting it.",
     },
 
     management: {
-      title: "How to remove the preference",
+      title: "How to delete your language preference",
       description:
-        "You can remove the language preference by deleting this website’s data in your browser’s privacy or storage settings. You may also browse without storing it if your browser blocks local storage.",
+        "You can delete your language preference by clearing the site's data from your browser's privacy or storage settings. If local storage is blocked, the website will not be able to remember this preference for future visits.",
     },
 
     changes: {
-      title: "Policy review",
+      title: "Changes to this policy",
       description:
-        "This policy will be updated if the technology used by the website changes. A final browser and deployed-version check will be performed before publication.",
+        "This policy will be updated whenever there are changes to the cookies, storage technologies or services used by the website.",
     },
 
     contact: {
       title: "Contact",
-      description: "For questions about this policy, please write to",
+      description: "For questions regarding this policy, you can write to",
     },
   },
 };

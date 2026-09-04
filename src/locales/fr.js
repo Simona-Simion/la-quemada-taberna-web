@@ -150,7 +150,7 @@ const fr = {
     instagramAction: "Suivez-nous sur Instagram",
 
     hours: {
-     weekday: "Du mardi au jeudi : 20h00 - 00h00",
+      weekday: "Du mardi au jeudi : 20h00 - 00h00",
       saturday: "Vendredi et samedi : 12h00 - 16h00 / 20h00 - 00h00",
       sunday: "Dimanche et lundi : fermé",
     },
@@ -212,48 +212,54 @@ const fr = {
     identification: {
       title: "Identification du titulaire",
       tradeName: "Nom commercial",
-      legalName: "Titulaire",
+      legalName: "Entité juridique",
       taxId: "Numéro d’identification fiscale",
       legalForm: "Forme juridique",
-      address: "Adresse",
+      address: "Siège social",
       email: "Adresse e-mail",
-      registry: "Informations d’enregistrement",
+      registry: "Informations du registre du commerce",
     },
 
     purpose: {
-      title: "Objet du site",
+      title: "Objet du site web",
       description:
-        "Ce site fournit des informations sur {{tradeName}}, son offre gastronomique, ses cartes, ses horaires, son emplacement, ses moyens de contact, les rencontres et les célébrations.",
+        "Ce site web a pour objet de fournir des informations sur {{tradeName}}, son offre gastronomique, ses cartes, ses horaires, sa localisation, ses moyens de contact, ainsi que les rencontres et célébrations.",
     },
 
     usage: {
       title: "Conditions d’utilisation",
       description:
-        "Toute personne utilisatrice s’engage à utiliser ce site de manière licite, responsable et respectueuse. Elle ne doit pas entreprendre d’actions susceptibles de l’endommager, de le surcharger ou d’empêcher son fonctionnement normal, ni utiliser ses contenus à des fins illicites.",
+        "L’utilisateur s’engage à utiliser ce site de manière licite, responsable et respectueuse. Il est interdit d’effectuer toute action susceptible d’endommager, de surcharger, d’altérer ou d’empêcher le fonctionnement normal du site, ainsi que d’utiliser son contenu à des fins illicites ou contraires à la réglementation applicable.",
     },
 
     content: {
       title: "Contenu et disponibilité",
       description:
-        "Tout est mis en œuvre pour fournir des informations claires et à jour, mais les cartes, prix, horaires, suggestions et disponibilités peuvent évoluer. Les informations communiquées directement par l’établissement font foi.",
+        "Tout est mis en œuvre afin que les informations publiées soient claires, exactes et à jour. Toutefois, les cartes, prix, horaires, suggestions, produits et autres informations relatives à l’établissement peuvent être modifiés. En cas de divergence, les informations communiquées directement par l’établissement prévaudront.",
     },
 
     intellectualProperty: {
       title: "Propriété intellectuelle et industrielle",
       description:
-        "Sauf indication contraire, les textes, la conception, la structure, les illustrations, les photographies et les contenus propres à ce site sont protégés par la législation applicable. Ils ne peuvent être reproduits ou utilisés sans autorisation, sauf dans les cas prévus par la loi.",
+        "Sauf indication expresse contraire, les textes, designs, images, photographies, illustrations, logos, structure et autres contenus propres à ce site sont protégés par la réglementation applicable en matière de propriété intellectuelle et industrielle. Ils ne peuvent être reproduits, distribués, transformés ou utilisés sans autorisation, sauf dans les cas permis par la loi.",
     },
 
     externalLinks: {
-      title: "Liens externes",
+      title: "Services et liens externes",
       description:
-        "Ce site contient des liens vers des services externes tels que Google Maps, Instagram et WhatsApp. Ils sont fournis uniquement pour aider les personnes utilisatrices. Les conditions et politiques du fournisseur concerné s’appliquent lors de leur ouverture.",
+        "Le site utilise Sanity pour récupérer et fournir certains contenus, notamment les cartes au format PDF. Il contient également des liens vers des services externes tels que Google Maps, Instagram et WhatsApp. Ces services liés ne sont pas chargés du seul fait de visiter ce site ; lorsque vous ouvrez volontairement leurs liens, ils peuvent utiliser leurs propres cookies ou d’autres technologies conformément à leurs politiques respectives.",
+    },
+
+    liability: {
+      title: "Responsabilité",
+      description:
+        "Le titulaire ne garantit pas la disponibilité ininterrompue du site ni l’absence totale d’erreurs techniques. Il ne pourra pas être tenu responsable des dommages résultant d’interruptions, d’incidents techniques, d’actions de tiers ou d’une utilisation incorrecte du site par l’utilisateur, sans préjudice des responsabilités qui ne peuvent légalement être exclues.",
     },
 
     law: {
       title: "Droit applicable",
       description:
-        "Ce site et les présentes mentions légales sont régis par le droit espagnol, sans préjudice de toute autre règle impérative applicable.",
+        "Ce site web et les présentes mentions légales sont régis par la législation espagnole, sans préjudice de toute autre réglementation impérative applicable.",
     },
   },
 
@@ -264,7 +270,7 @@ const fr = {
     responsible: {
       title: "Responsable du traitement",
       tradeName: "Nom commercial",
-      legalName: "Titulaire",
+      legalName: "Entité juridique",
       address: "Adresse",
       email: "E-mail de confidentialité",
     },
@@ -272,74 +278,81 @@ const fr = {
     data: {
       title: "Données susceptibles d’être traitées",
       intro:
-        "Selon l’utilisation du site, les catégories de données suivantes peuvent être traitées :",
+        "Selon l’utilisation que vous faites du site, les catégories de données suivantes peuvent être traitées :",
       contact:
-        "Les informations envoyées volontairement par e-mail, telles que le nom, l’adresse e-mail, le contenu de la demande et toute autre donnée incluse dans le message.",
+        "Les données que vous transmettez volontairement par e-mail, telles que votre nom, votre adresse e-mail, le contenu de votre demande et toute autre information incluse dans le message.",
       whatsapp:
-        "Si vous nous contactez via WhatsApp, votre numéro de téléphone, votre nom ou pseudonyme de profil, le contenu du message et toute autre information que vous choisissez de fournir peuvent être traités.",
+        "Si vous choisissez de nous contacter via WhatsApp, votre numéro de téléphone, votre nom ou pseudonyme de profil, le contenu de la conversation et toute autre information que vous décidez de communiquer peuvent être traités.",
       technical:
-        "Les données techniques minimales nécessaires à la diffusion et à la protection du site et des cartes PDF, telles que l’adresse IP, le navigateur, la date, l’heure et les journaux de requêtes gérés par les prestataires techniques.",
+        "Les données techniques minimales nécessaires pour fournir, maintenir et protéger le site et son contenu, telles que l’adresse IP, le navigateur, la date, l’heure et les journaux techniques des requêtes gérés par les fournisseurs d’infrastructure.",
       language:
-        "La préférence linguistique sélectionnée est enregistrée uniquement dans le navigateur et n’est pas envoyée au titulaire de l’établissement.",
+        "La préférence linguistique sélectionnée est enregistrée uniquement dans le stockage local de votre navigateur et n’est pas utilisée pour vous identifier ni pour suivre votre activité.",
     },
 
     purposes: {
-      title: "Finalités",
+      title: "Finalités du traitement",
       contact:
-        "Répondre aux demandes, aux questions concernant les groupes ou célébrations et aux autres communications envoyées par e-mail.",
+        "Répondre aux demandes, demandes d’information et communications envoyées par e-mail.",
       whatsapp:
-        "Répondre aux demandes concernant les groupes, rencontres et célébrations envoyées via WhatsApp.",
+        "Répondre et gérer les demandes envoyées volontairement via WhatsApp, notamment celles concernant les groupes, rencontres et célébrations.",
       security:
-        "Maintenir le fonctionnement, la disponibilité et la sécurité technique du site.",
-      language: "Mémoriser la langue choisie par la personne utilisatrice.",
+        "Assurer le fonctionnement, la disponibilité, l’intégrité et la sécurité technique du site et de ses contenus.",
+      language:
+        "Mémoriser la langue choisie par l’utilisateur afin de faciliter les visites ultérieures.",
     },
 
     legalBasis: {
       title: "Base juridique",
       description:
-        "Les demandes envoyées par e-mail ou WhatsApp sont traitées à la suite de la démarche volontaire de la personne concernée et, le cas échéant, afin de prendre des mesures précontractuelles. Le traitement technique indispensable repose sur l’intérêt légitime à maintenir un site sécurisé et opérationnel. La préférence linguistique est enregistrée après un choix explicite de la personne utilisatrice.",
+        "Le traitement des données communiquées par e-mail ou WhatsApp repose sur la demande formulée volontairement par la personne concernée et, le cas échéant, sur l’exécution de mesures précontractuelles prises à sa demande. Le traitement des données techniques strictement nécessaires repose sur l’intérêt légitime à maintenir le site sécurisé, disponible et opérationnel. La préférence linguistique est enregistrée à la suite du choix effectué par l’utilisateur.",
     },
 
     whatsapp: {
       title: "Demandes via WhatsApp",
       description:
-        "Lorsque vous choisissez ce canal, la conversation s’effectue via WhatsApp. La Quemada traite les informations reçues afin de répondre à la demande et de la gérer. WhatsApp Ireland Limited fournit le service dans la Région européenne et applique sa propre politique de confidentialité.",
+        "Si vous choisissez de nous contacter via WhatsApp, la communication aura lieu par l’intermédiaire de ce service. La Quemada Taberna traitera les données reçues uniquement afin de répondre à votre demande et de la gérer. WhatsApp applique ses propres conditions et sa propre politique de confidentialité lors de l’utilisation de son service.",
     },
 
     recipients: {
       title: "Destinataires et prestataires",
       description:
-        "Les données ne sont pas vendues. Seuls les prestataires nécessaires au fonctionnement du service, tels que l’hébergement web, la messagerie électronique et Sanity pour gérer et diffuser les cartes PDF, peuvent accéder à des informations techniques ou de contact. Lorsque WhatsApp est utilisé, la communication transite également par ce service. Chaque prestataire applique ses obligations contractuelles et légales. Les données peuvent également être communiquées lorsqu’une obligation légale l’impose.",
+        "Les données personnelles ne sont ni vendues ni communiquées à des fins commerciales. Certaines données peuvent être accessibles aux prestataires nécessaires au fonctionnement et à la maintenance des services utilisés par le site, notamment Netlify pour l’hébergement et l’infrastructure web, Sanity pour la gestion et la diffusion de certains contenus et fichiers PDF, ainsi que le fournisseur de messagerie électronique pour la réception et la gestion des communications. Si vous utilisez WhatsApp, les données nécessaires à la communication seront également traitées par l’intermédiaire de ce service. Les données pourront également être communiquées lorsqu’une obligation légale l’exige.",
+    },
+
+    internationalTransfers: {
+      title: "Transferts internationaux de données",
+      description:
+        "Certains prestataires technologiques utilisés peuvent traiter des données depuis des pays situés en dehors de l’Espace économique européen. Lorsque des transferts internationaux de données personnelles ont lieu, ils doivent être effectués conformément au Règlement général sur la protection des données, sur la base d’une décision d’adéquation de la Commission européenne ou d’autres garanties juridiquement reconnues applicables.",
     },
 
     retention: {
       title: "Durées de conservation",
       description:
-        "Les demandes sont conservées pendant la durée nécessaire pour répondre et gérer la communication. Si une relation commerciale en découle, les informations peuvent être conservées pendant les délais légaux applicables. Les journaux techniques sont conservés pendant les périodes définies par les prestataires nécessaires à la sécurité et au fonctionnement.",
+        "Les données envoyées par e-mail ou WhatsApp seront conservées pendant la durée nécessaire pour répondre à la demande et la gérer. Si la communication donne lieu à une relation commerciale ou à une obligation légale, elles pourront être conservées pendant les délais exigés par la réglementation applicable. Les journaux techniques seront conservés pendant les périodes nécessaires au fonctionnement et à la sécurité du service, conformément aux politiques des prestataires concernés.",
     },
 
     rights: {
-      title: "Vos droits",
+      title: "Droits des personnes",
       description:
-        "Vous pouvez demander l’accès, la rectification, l’effacement, l’opposition, la limitation ou la portabilité lorsque ces droits sont applicables en écrivant à {{privacyEmail}}. Des informations supplémentaires pourront être demandées afin de vérifier l’identité de la personne exerçant le droit.",
+        "Vous pouvez demander l’accès à vos données personnelles, leur rectification ou leur suppression, ainsi que la limitation du traitement, vous opposer au traitement et exercer votre droit à la portabilité lorsque celui-ci est applicable, en écrivant à {{privacyEmail}}. Lorsque cela est nécessaire, des informations supplémentaires peuvent être demandées afin de vérifier l’identité de la personne exerçant ses droits.",
     },
 
     externalServices: {
       title: "Services et liens externes",
       description:
-        "Le site utilise Sanity pour récupérer les cartes et contient des liens vers Google Maps, Instagram et WhatsApp. Les services externes appliquent leurs propres politiques lorsqu’une connexion est établie avec eux ou qu’un de leurs liens est ouvert.",
+        "Le site utilise Sanity pour obtenir certains contenus et contient des liens vers des services externes tels que Google Maps, Instagram et WhatsApp. Lorsque vous accédez volontairement à ces liens, tout traitement ultérieur de données personnelles est régi par les conditions et politiques de confidentialité du prestataire concerné.",
     },
 
     complaint: {
       title: "Réclamations",
       description:
-        "Si vous estimez que vos données n’ont pas été traitées correctement, vous pouvez introduire une réclamation auprès de l’Agence espagnole de protection des données.",
+        "Si vous estimez que le traitement de vos données personnelles n’est pas conforme à la réglementation applicable, vous pouvez déposer une réclamation auprès de l’Agence espagnole de protection des données (Agencia Española de Protección de Datos).",
     },
 
     changes: {
       title: "Modifications de cette politique",
       description:
-        "Cette politique sera mise à jour lorsque les services, prestataires ou traitements de données utilisés par le site évolueront.",
+        "Cette politique pourra être mise à jour en cas de modification des services, des prestataires, des traitements de données ou des exigences légales applicables.",
     },
   },
 
@@ -348,39 +361,39 @@ const fr = {
     title: "Politique relative aux cookies",
 
     currentUse: {
-      title: "Utilisation actuelle des cookies",
+      title: "Utilisation des cookies",
       description:
-        "Dans sa configuration actuelle, ce site n’installe aucun cookie interne ou tiers à des fins d’analyse, de publicité, de suivi ou de personnalisation.",
+        "Ce site web n’utilise pas de cookies propres ou de tiers à des fins d’analyse, de publicité, de suivi ou de personnalisation.",
     },
 
     localStorage: {
       title: "Préférence linguistique",
       description:
-        "Lorsque vous choisissez explicitement une langue, le site enregistre la clé « {{storageKey}} » dans le stockage local de votre navigateur. Sa seule finalité est de mémoriser ce choix lors de prochaines visites. Elle ne contient ni votre nom, ni votre adresse e-mail, ni aucune autre donnée d’identification et n’est pas utilisée pour suivre votre activité.",
+        "Lorsque vous choisissez expressément une langue, le site enregistre la clé « {{storageKey}} » dans le stockage local de votre navigateur. Sa seule finalité est de mémoriser ce choix lors de vos prochaines visites. Cette préférence ne contient ni votre nom, ni votre adresse e-mail, ni d’autres données permettant de vous identifier et n’est pas utilisée pour suivre votre activité.",
     },
 
     consent: {
-      title: "Bandeau de consentement",
+      title: "Bannière de consentement",
       description:
-        "Aucun bandeau n’est affiché car la configuration actuelle n’utilise pas de cookies nécessitant un consentement. Si des outils d’analyse, de publicité ou d’autres technologies non nécessaires sont ajoutés à l’avenir, le consentement sera demandé avant leur activation.",
+        "Aucune bannière de consentement n’est actuellement affichée, car le site n’utilise pas de cookies ni de technologies similaires nécessitant un consentement. Si des outils d’analyse, de publicité ou d’autres technologies nécessitant un consentement sont ajoutés à l’avenir, celui-ci sera demandé avant leur activation.",
     },
 
     externalLinks: {
-      title: "Services externes",
+      title: "Services et liens externes",
       description:
-        "Les liens vers Google Maps, Instagram et WhatsApp peuvent conduire à des services utilisant leurs propres cookies ou technologies. Ces technologies appartiennent aux fournisseurs concernés et ne s’appliquent que lors de l’accès à leurs services. Le lien WhatsApp n’installe aucun cookie sur ce site avant son ouverture par la personne utilisatrice. Sanity est utilisé pour diffuser les cartes PDF et son comportement technique sera de nouveau vérifié avant la publication.",
+        "Le site utilise Sanity pour récupérer et fournir certains contenus, notamment les cartes au format PDF. Il contient également des liens vers des services externes tels que Google Maps, Instagram et WhatsApp. Lorsque vous accédez volontairement à ces liens, ces services peuvent utiliser leurs propres cookies ou d’autres technologies conformément à leurs politiques respectives. Ces services ne sont pas chargés sur ce site du seul fait de le visiter.",
     },
 
     management: {
-      title: "Comment supprimer la préférence",
+      title: "Comment supprimer la préférence linguistique",
       description:
-        "Vous pouvez supprimer la préférence linguistique en effaçant les données du site dans les paramètres de confidentialité ou de stockage de votre navigateur. Vous pouvez également naviguer sans l’enregistrer si votre navigateur bloque le stockage local.",
+        "Vous pouvez supprimer votre préférence linguistique en effaçant les données du site depuis les paramètres de confidentialité ou de stockage de votre navigateur. Si le stockage local est bloqué, le site ne pourra pas mémoriser cette préférence lors de vos prochaines visites.",
     },
 
     changes: {
-      title: "Révision de la politique",
+      title: "Modifications de cette politique",
       description:
-        "Cette politique sera mise à jour si la technologie utilisée par le site évolue. Une vérification finale du navigateur et de la version déployée sera effectuée avant la publication.",
+        "Cette politique sera mise à jour en cas de modification des cookies, des technologies de stockage ou des services utilisés par le site.",
     },
 
     contact: {

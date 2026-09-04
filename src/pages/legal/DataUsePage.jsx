@@ -94,6 +94,10 @@ function PrivacyPolicy() {
         <p>{t('privacyPolicy.recipients.description')}</p>
       </LegalSection>
 
+      <LegalSection title={t('privacyPolicy.internationalTransfers.title')}>
+        <p>{t('privacyPolicy.internationalTransfers.description')}</p>
+      </LegalSection>
+
       <LegalSection title={t('privacyPolicy.retention.title')}>
         <p>{t('privacyPolicy.retention.description')}</p>
       </LegalSection>

@@ -147,9 +147,9 @@ const es = {
     instagramAction: "Síguenos en Instagram",
 
     hours: {
-       weekday: "Martes a jueves: 20:00 - 00:00",
-       saturday: "Viernes y sábado: 12:00 - 16:00 / 20:00 - 00:00",
-       sunday: "Domingo y lunes: Cerrado",  
+      weekday: "Martes a viernes: 20:00 - 00:00",
+      saturday: "Sábado: 12:00 - 16:00 / 20:00 - 00:00",
+      sunday: "Domingo y lunes: Cerrado",
     },
 
     mapTitle: "Mapa de La Quemada Taberna",
@@ -219,31 +219,37 @@ const es = {
     purpose: {
       title: "Objeto del sitio web",
       description:
-        "Este sitio web tiene como finalidad ofrecer información sobre {{tradeName}}, su propuesta gastronómica, sus cartas, horarios, ubicación, medios de contacto, encuentros y celebraciones.",
+        "Este sitio web tiene como finalidad ofrecer información sobre {{tradeName}}, su propuesta gastronómica, cartas, horarios, ubicación, medios de contacto, encuentros y celebraciones.",
     },
 
     usage: {
       title: "Condiciones de uso",
       description:
-        "La persona usuaria se compromete a utilizar este sitio web de forma lícita, responsable y respetuosa. No deberá realizar acciones que puedan dañar, sobrecargar o impedir su funcionamiento normal, ni utilizar sus contenidos con fines ilícitos.",
+        "La persona usuaria se compromete a utilizar este sitio web de forma lícita, responsable y respetuosa. Queda prohibido realizar acciones que puedan dañar, sobrecargar, alterar o impedir el funcionamiento normal del sitio, así como utilizar sus contenidos con fines ilícitos o contrarios a la normativa aplicable.",
     },
 
     content: {
       title: "Contenido y disponibilidad",
       description:
-        "Se procura que la información sea clara y esté actualizada, pero las cartas, precios, horarios, sugerencias y disponibilidad de productos pueden cambiar. La información definitiva será la comunicada por el establecimiento.",
+        "Se procura que la información publicada sea clara, correcta y esté actualizada. No obstante, las cartas, precios, horarios, sugerencias, productos y demás información del establecimiento pueden modificarse. En caso de discrepancia, prevalecerá la información facilitada directamente por el establecimiento.",
     },
 
     intellectualProperty: {
       title: "Propiedad intelectual e industrial",
       description:
-        "Salvo que se indique lo contrario, los textos, el diseño, la estructura, las ilustraciones, las fotografías y los contenidos propios de este sitio están protegidos por la normativa aplicable. No pueden reproducirse o utilizarse sin autorización, excepto en los casos permitidos por la ley.",
+        "Salvo que se indique expresamente lo contrario, los textos, diseños, imágenes, fotografías, ilustraciones, logotipos, estructura y demás contenidos propios de este sitio web están protegidos por la normativa aplicable en materia de propiedad intelectual e industrial. No podrán reproducirse, distribuirse, transformarse o utilizarse sin autorización, salvo en los casos permitidos por la ley.",
     },
 
     externalLinks: {
       title: "Enlaces externos",
       description:
-        "Este sitio incluye enlaces a servicios externos, como Google Maps, Instagram y WhatsApp. Se facilitan únicamente como ayuda a las personas usuarias. Al abrirlos se aplicarán las condiciones y políticas del proveedor correspondiente.",
+        "Este sitio web contiene enlaces a servicios y páginas de terceros, como Google Maps, Instagram y WhatsApp. Estos enlaces se facilitan únicamente para ofrecer información o facilitar el contacto. Al acceder a ellos, se aplicarán las condiciones, políticas de privacidad y demás normas del proveedor correspondiente.",
+    },
+
+    liability: {
+      title: "Responsabilidad",
+      description:
+        "El titular no garantiza la disponibilidad ininterrumpida del sitio web ni la ausencia absoluta de errores técnicos. Tampoco será responsable de los daños derivados de interrupciones, incidencias técnicas, actuaciones de terceros o del uso indebido del sitio por parte de la persona usuaria, sin perjuicio de las responsabilidades que legalmente no puedan excluirse.",
     },
 
     law: {
@@ -270,72 +276,79 @@ const es = {
       intro:
         "Según el uso que hagas de la web, pueden tratarse las siguientes categorías de datos:",
       contact:
-        "Datos que envíes voluntariamente por correo electrónico, como nombre, dirección de correo, contenido de la consulta y cualquier otro dato incluido en el mensaje.",
+        "Datos que envíes voluntariamente por correo electrónico, como tu nombre, dirección de correo, contenido de la consulta y cualquier otro dato incluido en el mensaje.",
       whatsapp:
-        "Si contactas mediante WhatsApp, pueden tratarse tu número de teléfono, nombre o alias de perfil, el contenido del mensaje y cualquier otro dato que decidas facilitar.",
+        "Si decides contactar mediante WhatsApp, pueden tratarse tu número de teléfono, nombre o alias de perfil, el contenido de la conversación y cualquier otro dato que decidas facilitar.",
       technical:
-        "Datos técnicos mínimos necesarios para servir y proteger la web y los PDF, como dirección IP, navegador, fecha, hora y registros de solicitud gestionados por los proveedores técnicos.",
+        "Datos técnicos mínimos necesarios para servir, mantener y proteger la web y sus contenidos, como la dirección IP, navegador, fecha, hora y registros técnicos de las solicitudes gestionados por los proveedores de infraestructura.",
       language:
-        "La preferencia de idioma seleccionada se guarda únicamente en el navegador y no se envía al titular del establecimiento.",
+        "La preferencia de idioma seleccionada se guarda únicamente en el almacenamiento local de tu navegador y no se utiliza para identificarte ni realizar seguimiento de tu actividad.",
     },
 
     purposes: {
-      title: "Finalidades",
+      title: "Finalidades del tratamiento",
       contact:
-        "Atender consultas, solicitudes sobre grupos o celebraciones y otras comunicaciones enviadas por correo.",
+        "Atender y responder consultas, solicitudes de información y comunicaciones enviadas por correo electrónico.",
       whatsapp:
-        "Atender las consultas sobre grupos, encuentros y celebraciones enviadas mediante WhatsApp.",
+        "Atender y gestionar las consultas enviadas voluntariamente mediante WhatsApp, incluidas las relacionadas con grupos, encuentros y celebraciones.",
       security:
-        "Mantener el funcionamiento, la disponibilidad y la seguridad técnica de la web.",
-      language: "Recordar el idioma elegido por la persona usuaria.",
+        "Mantener el funcionamiento, disponibilidad, integridad y seguridad técnica de la web y de los contenidos ofrecidos.",
+      language:
+        "Recordar el idioma elegido por la persona usuaria para facilitar la navegación en futuras visitas.",
     },
 
     legalBasis: {
       title: "Base jurídica",
       description:
-        "Las consultas enviadas por correo electrónico o WhatsApp se atienden a partir de la solicitud voluntaria de la persona interesada y, cuando corresponda, para aplicar medidas precontractuales. El tratamiento técnico imprescindible se basa en el interés legítimo de mantener una web segura y operativa. La preferencia de idioma se guarda tras una elección expresa de la persona usuaria.",
+        "El tratamiento de los datos facilitados mediante correo electrónico o WhatsApp se basa en la solicitud realizada voluntariamente por la persona interesada y, cuando proceda, en la aplicación de medidas precontractuales solicitadas por ella. El tratamiento de los datos técnicos estrictamente necesarios se basa en el interés legítimo de mantener la web segura, disponible y operativa. La preferencia de idioma se almacena como consecuencia de la elección realizada por la persona usuaria.",
     },
 
     whatsapp: {
       title: "Consultas mediante WhatsApp",
       description:
-        "Al elegir este canal, la conversación se realiza a través de WhatsApp. La Quemada tratará los datos recibidos para responder y gestionar la consulta. WhatsApp Ireland Limited presta el servicio en la Región Europea y aplica su propia política de privacidad.",
+        "Si eliges contactar mediante WhatsApp, la comunicación se realizará a través de dicho servicio. La Quemada Taberna tratará los datos recibidos únicamente para atender y gestionar tu consulta. WhatsApp aplica sus propias condiciones y política de privacidad al utilizar su servicio.",
     },
 
     recipients: {
       title: "Destinatarios y proveedores",
       description:
-        "Los datos no se venden. Solo podrán acceder a información técnica o de contacto los proveedores necesarios para prestar el servicio, como el alojamiento web, el correo electrónico y Sanity para gestionar y servir las cartas en PDF. Cuando se utiliza WhatsApp, la comunicación también pasa por dicho servicio. Cada proveedor aplica sus obligaciones contractuales y legales. También podrán comunicarse datos cuando exista una obligación legal.",
+        "Los datos personales no se venden ni se ceden con fines comerciales. Podrán acceder a determinados datos los proveedores necesarios para prestar y mantener los servicios utilizados por la web, como Netlify para el alojamiento e infraestructura web, Sanity para la gestión y entrega de determinados contenidos y archivos PDF, y el proveedor de correo electrónico para la recepción y gestión de comunicaciones. Si utilizas WhatsApp, los datos necesarios para la comunicación serán tratados también a través de dicho servicio. Los datos podrán comunicarse igualmente cuando exista una obligación legal.",
+    },
+
+    internationalTransfers: {
+      title: "Transferencias internacionales",
+      description:
+        "Algunos proveedores tecnológicos utilizados pueden tratar datos desde países situados fuera del Espacio Económico Europeo. Cuando se produzcan transferencias internacionales de datos personales, deberán realizarse conforme al Reglamento General de Protección de Datos mediante una decisión de adecuación de la Comisión Europea u otras garantías legalmente reconocidas que resulten aplicables.",
     },
 
     retention: {
       title: "Plazos de conservación",
       description:
-        "Las consultas se conservarán durante el tiempo necesario para responder y gestionar la comunicación. Si de ella nace una relación comercial, podrán conservarse durante los plazos legales aplicables. Los registros técnicos se conservarán durante los periodos definidos por los proveedores necesarios para seguridad y funcionamiento.",
+        "Los datos enviados mediante correo electrónico o WhatsApp se conservarán durante el tiempo necesario para atender y gestionar la consulta. Si de la comunicación deriva una relación comercial o una obligación legal, podrán conservarse durante los plazos exigidos por la normativa aplicable. Los registros técnicos se conservarán durante los periodos necesarios para el funcionamiento y la seguridad del servicio, de acuerdo con las políticas de los proveedores correspondientes.",
     },
 
     rights: {
       title: "Derechos de las personas",
       description:
-        "Puedes solicitar acceso, rectificación, supresión, oposición, limitación o portabilidad cuando resulte aplicable escribiendo a {{privacyEmail}}. Podrá solicitarse información adicional para comprobar la identidad de quien ejerce el derecho.",
+        "Puedes solicitar el acceso a tus datos personales, su rectificación o supresión, así como la limitación u oposición a su tratamiento y la portabilidad cuando resulte aplicable, escribiendo a {{privacyEmail}}. Cuando sea necesario, podrá solicitarse información adicional para comprobar la identidad de la persona que ejerce el derecho.",
     },
 
     externalServices: {
       title: "Servicios y enlaces externos",
       description:
-        "La web utiliza Sanity para obtener las cartas y contiene enlaces a Google Maps, Instagram y WhatsApp. Los servicios externos aplican sus propias políticas cuando se realiza una conexión con ellos o se abre uno de sus enlaces.",
+        "La web utiliza Sanity para obtener determinados contenidos y contiene enlaces a servicios externos como Google Maps, Instagram y WhatsApp. Al acceder voluntariamente a estos enlaces, el tratamiento posterior de datos se regirá por las condiciones y políticas de privacidad del proveedor correspondiente.",
     },
 
     complaint: {
       title: "Reclamaciones",
       description:
-        "Si consideras que el tratamiento de tus datos no es adecuado, puedes presentar una reclamación ante la Agencia Española de Protección de Datos.",
+        "Si consideras que el tratamiento de tus datos personales no se ajusta a la normativa, puedes presentar una reclamación ante la Agencia Española de Protección de Datos.",
     },
 
     changes: {
       title: "Cambios en esta política",
       description:
-        "Esta política se actualizará cuando cambien los servicios, proveedores o tratamientos de datos utilizados por la web.",
+        "Esta política podrá actualizarse cuando cambien los servicios, proveedores, tratamientos de datos o requisitos legales aplicables.",
     },
   },
 
@@ -344,39 +357,39 @@ const es = {
     title: "Política de cookies",
 
     currentUse: {
-      title: "Uso actual de cookies",
+      title: "Uso de cookies",
       description:
-        "Según la implementación actual, esta web no instala cookies propias ni de terceros para analítica, publicidad, seguimiento o personalización.",
+        "Esta web no utiliza cookies propias ni de terceros con fines de analítica, publicidad, seguimiento o personalización.",
     },
 
     localStorage: {
       title: "Preferencia de idioma",
       description:
-        "Cuando eliges expresamente un idioma, la web guarda en el almacenamiento local del navegador la clave “{{storageKey}}”. Su única finalidad es recordar esa elección en próximas visitas. No contiene tu nombre, correo ni otros datos identificativos y no se utiliza para seguir tu actividad.",
+        "Cuando eliges expresamente un idioma, la web guarda en el almacenamiento local de tu navegador la clave “{{storageKey}}”. Su única finalidad es recordar esa elección en próximas visitas. Esta preferencia no contiene tu nombre, correo electrónico ni otros datos identificativos y no se utiliza para realizar seguimiento de tu actividad.",
     },
 
     consent: {
       title: "Banner de consentimiento",
       description:
-        "No se muestra un banner porque la configuración actual no utiliza cookies que requieran consentimiento. Si en el futuro se incorporan herramientas de analítica, publicidad u otras tecnologías no necesarias, se solicitará el consentimiento antes de activarlas.",
+        "Actualmente no se muestra un banner de consentimiento porque la web no utiliza cookies ni tecnologías similares que requieran consentimiento. Si en el futuro se incorporan herramientas de analítica, publicidad u otras tecnologías que lo requieran, se solicitará el consentimiento antes de activarlas.",
     },
 
     externalLinks: {
-      title: "Servicios externos",
+      title: "Servicios y enlaces externos",
       description:
-        "Los enlaces a Google Maps, Instagram y WhatsApp pueden llevar a servicios que utilicen sus propias cookies o tecnologías. Esas tecnologías pertenecen a dichos proveedores y solo se aplican al acceder a sus servicios. El enlace a WhatsApp no instala cookies en esta web antes de que la persona usuaria lo abra. Sanity se utiliza para servir las cartas en PDF y su comportamiento técnico se revisará nuevamente antes de publicar.",
+        "La web utiliza Sanity para obtener y servir determinados contenidos, incluidas las cartas en PDF. También contiene enlaces a servicios externos como Google Maps, Instagram y WhatsApp. Al acceder voluntariamente a estos enlaces, dichos servicios pueden utilizar sus propias cookies u otras tecnologías de acuerdo con sus respectivas políticas. Estos servicios no se cargan en esta web por el mero hecho de visitarla.",
     },
 
     management: {
-      title: "Cómo borrar la preferencia",
+      title: "Cómo borrar la preferencia de idioma",
       description:
-        "Puedes eliminar la preferencia de idioma borrando los datos del sitio desde la configuración de privacidad o almacenamiento de tu navegador. También puedes navegar sin guardarla si el navegador bloquea el almacenamiento local.",
+        "Puedes eliminar la preferencia de idioma borrando los datos del sitio desde la configuración de privacidad o almacenamiento de tu navegador. Si el almacenamiento local está bloqueado, la web no podrá recordar esta preferencia para futuras visitas.",
     },
 
     changes: {
-      title: "Revisión de la política",
+      title: "Cambios en esta política",
       description:
-        "Esta política se actualizará si cambia la tecnología utilizada por la web. Antes de publicar se realizará una comprobación final del navegador y de la versión desplegada.",
+        "Esta política se actualizará cuando se produzcan cambios en las cookies, tecnologías de almacenamiento o servicios utilizados por la web.",
     },
 
     contact: {

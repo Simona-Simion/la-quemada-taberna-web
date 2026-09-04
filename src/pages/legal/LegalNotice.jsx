@@ -119,6 +119,10 @@ function LegalNotice() {
         <p>{t('legalNotice.externalLinks.description')}</p>
       </LegalSection>
 
+      <LegalSection title={t('legalNotice.liability.title')}>
+        <p>{t('legalNotice.liability.description')}</p>
+      </LegalSection>
+
       <LegalSection title={t('legalNotice.law.title')}>
         <p>{t('legalNotice.law.description')}</p>
       </LegalSection>
