@@ -63,17 +63,17 @@ function Location() {
 
   const hours = {
     weekday:
-      remoteInfo?.hours?.weekday?.trim() ||
+      remoteInfo?.hours?.weekday?.label?.trim() ||
       t('visit.hours.weekday'),
 
     saturday:
-      remoteInfo?.hours?.saturday?.trim() ||
+      remoteInfo?.hours?.saturday?.label?.trim() ||
       t('visit.hours.saturday'),
 
     sunday:
-      remoteInfo?.hours?.sunday?.trim() ||
+      remoteInfo?.hours?.sunday?.label?.trim() ||
       t('visit.hours.sunday'),
-  }
+ }
 
   const noticeData =
     remoteInfo?.temporaryNotice

@@ -10,8 +10,7 @@ export const tavernInfo = defineType({
       name: 'internalName',
       title: 'Nombre interno',
       type: 'string',
-      description:
-        'Sirve para identificar este documento dentro de Sanity.',
+      description: 'Sirve para identificar este documento dentro de Sanity.',
       initialValue: 'Información principal',
       validation: (Rule) => Rule.required(),
     }),
@@ -20,27 +19,93 @@ export const tavernInfo = defineType({
       name: 'hours',
       title: 'Horario habitual',
       type: 'object',
-
       fields: [
         defineField({
           name: 'weekday',
-          title: 'Martes a jueves',
-          type: 'localizedString',
-          validation: (Rule) => Rule.required(),
+          title: 'Martes a viernes',
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'label',
+              title: 'Texto visible',
+              type: 'localizedString',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'opens',
+              title: 'Hora de apertura',
+              type: 'string',
+              initialValue: '20:00',
+              validation: (Rule) =>
+                Rule.required().regex(/^([01]\d|2[0-3]):[0-5]\d$/, {
+                  name: 'hora',
+                }),
+            }),
+            defineField({
+              name: 'closes',
+              title: 'Hora de cierre',
+              type: 'string',
+              initialValue: '00:00',
+              validation: (Rule) =>
+                Rule.required().regex(/^([01]\d|2[0-3]):[0-5]\d$/, {
+                  name: 'hora',
+                }),
+            }),
+          ],
         }),
 
         defineField({
           name: 'saturday',
-          title: ' Viernes y sábado',
-          type: 'localizedString',
-          validation: (Rule) => Rule.required(),
+          title: 'Sábado',
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'label',
+              title: 'Texto visible',
+              type: 'localizedString',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'opens',
+              title: 'Hora de apertura',
+              type: 'string',
+              initialValue: '12:00',
+              validation: (Rule) =>
+                Rule.required().regex(/^([01]\d|2[0-3]):[0-5]\d$/, {
+                  name: 'hora',
+                }),
+            }),
+            defineField({
+              name: 'closes',
+              title: 'Hora de cierre',
+              type: 'string',
+              initialValue: '00:00',
+              validation: (Rule) =>
+                Rule.required().regex(/^([01]\d|2[0-3]):[0-5]\d$/, {
+                  name: 'hora',
+                }),
+            }),
+          ],
         }),
 
         defineField({
           name: 'sunday',
           title: 'Domingo y lunes',
-          type: 'localizedString',
-          validation: (Rule) => Rule.required(),
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'label',
+              title: 'Texto visible',
+              type: 'localizedString',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: 'closed',
+              title: 'Cerrado',
+              type: 'boolean',
+              initialValue: true,
+            }),
+          ],
         }),
       ],
     }),
@@ -66,8 +131,7 @@ export const tavernInfo = defineType({
           type: 'string',
           initialValue: 'info',
 
-          hidden: ({parent}) =>
-            !parent?.isVisible,
+          hidden: ({parent}) => !parent?.isVisible,
 
           options: {
             list: [
@@ -92,12 +156,10 @@ export const tavernInfo = defineType({
         defineField({
           name: 'startAt',
           title: 'Mostrar desde',
-          description:
-            'Opcional. Si se deja vacío, el aviso podrá mostrarse inmediatamente.',
+          description: 'Opcional. Si se deja vacío, el aviso podrá mostrarse inmediatamente.',
           type: 'datetime',
 
-          hidden: ({parent}) =>
-            !parent?.isVisible,
+          hidden: ({parent}) => !parent?.isVisible,
         }),
 
         defineField({
@@ -107,48 +169,29 @@ export const tavernInfo = defineType({
             'Opcional. Si se deja vacío, el aviso seguirá visible hasta que se desactive manualmente.',
           type: 'datetime',
 
-          hidden: ({parent}) =>
-            !parent?.isVisible,
+          hidden: ({parent}) => !parent?.isVisible,
 
           validation: (Rule) =>
-            Rule.custom(
-              (endAt, context) => {
-                const parent =
-                  context.parent as
-                    | {
-                        startAt?: unknown
-                      }
-                    | undefined
+            Rule.custom((endAt, context) => {
+              const parent = context.parent as
+                | {
+                    startAt?: unknown
+                  }
+                | undefined
 
-                const endDate =
-                  typeof endAt === 'string'
-                    ? endAt
-                    : ''
+              const endDate = typeof endAt === 'string' ? endAt : ''
 
-                const startDate =
-                  typeof parent?.startAt ===
-                  'string'
-                    ? parent.startAt
-                    : ''
+              const startDate = typeof parent?.startAt === 'string' ? parent.startAt : ''
 
-                if (
-                  !endDate ||
-                  !startDate
-                ) {
-                  return true
-                }
-
-                return (
-                  new Date(
-                    endDate
-                  ).getTime() >
-                    new Date(
-                      startDate
-                    ).getTime() ||
-                  'La fecha final debe ser posterior a la fecha de inicio.'
-                )
+              if (!endDate || !startDate) {
+                return true
               }
-            ),
+
+              return (
+                new Date(endDate).getTime() > new Date(startDate).getTime() ||
+                'La fecha final debe ser posterior a la fecha de inicio.'
+              )
+            }),
         }),
 
         defineField({
@@ -156,77 +199,54 @@ export const tavernInfo = defineType({
           title: 'Mensaje del aviso',
           type: 'localizedText',
 
-          hidden: ({parent}) =>
-            !parent?.isVisible,
+          hidden: ({parent}) => !parent?.isVisible,
 
           validation: (Rule) =>
-            Rule.custom(
-              (value, context) => {
-                const parent =
-                  context.parent as
-                    | {
-                        isVisible?: boolean
-                      }
-                    | undefined
+            Rule.custom((value, context) => {
+              const parent = context.parent as
+                | {
+                    isVisible?: boolean
+                  }
+                | undefined
 
-                if (
-                  !parent?.isVisible
-                ) {
-                  return true
-                }
-
-                const localized =
-                  value as
-                    | {
-                        es?: unknown
-                        en?: unknown
-                        fr?: unknown
-                      }
-                    | undefined
-
-                const spanishMessage =
-                  typeof localized?.es ===
-                  'string'
-                    ? localized.es.trim()
-                    : ''
-
-                return (
-                  Boolean(
-                    spanishMessage
-                  ) ||
-                  'Escribe al menos el mensaje en español.'
-                )
+              if (!parent?.isVisible) {
+                return true
               }
-            ),
+
+              const localized = value as
+                | {
+                    es?: unknown
+                    en?: unknown
+                    fr?: unknown
+                  }
+                | undefined
+
+              const spanishMessage = typeof localized?.es === 'string' ? localized.es.trim() : ''
+
+              return Boolean(spanishMessage) || 'Escribe al menos el mensaje en español.'
+            }),
         }),
 
         defineField({
           name: 'actionLabel',
           title: 'Texto del botón',
-          description:
-            'Opcional. Por ejemplo: Ver carta, Más información o Cómo llegar.',
+          description: 'Opcional. Por ejemplo: Ver carta, Más información o Cómo llegar.',
           type: 'localizedString',
 
-          hidden: ({parent}) =>
-            !parent?.isVisible,
+          hidden: ({parent}) => !parent?.isVisible,
         }),
 
         defineField({
           name: 'actionUrl',
           title: 'Enlace del botón',
-          description:
-            'Opcional. El botón solo aparecerá si hay un enlace y un texto.',
+          description: 'Opcional. El botón solo aparecerá si hay un enlace y un texto.',
           type: 'url',
 
-          hidden: ({parent}) =>
-            !parent?.isVisible,
+          hidden: ({parent}) => !parent?.isVisible,
 
           validation: (Rule) =>
             Rule.uri({
-              scheme: [
-                'http',
-                'https',
-              ],
+              scheme: ['http', 'https'],
             }),
         }),
       ],
@@ -243,16 +263,14 @@ export const tavernInfo = defineType({
           title: 'Correo electrónico',
           type: 'string',
 
-          validation: (Rule) =>
-            Rule.required().email(),
+          validation: (Rule) => Rule.required().email(),
         }),
 
         defineField({
           name: 'phone',
           title: 'Teléfono visible',
           type: 'string',
-          description:
-            'Déjalo vacío mientras no se quiera mostrar un teléfono.',
+          description: 'Déjalo vacío mientras no se quiera mostrar un teléfono.',
         }),
 
         defineField({
@@ -263,15 +281,10 @@ export const tavernInfo = defineType({
             'Incluye el prefijo del país, sin +, espacios ni guiones. Ejemplo: 34600111222.',
 
           validation: (Rule) =>
-            Rule.regex(
-              /^[0-9]{8,15}$/,
-              {
-                name: 'número de WhatsApp',
-                invert: false,
-              }
-            ).warning(
-              'Usa solo números, incluyendo el prefijo del país.'
-            ),
+            Rule.regex(/^[0-9]{8,15}$/, {
+              name: 'número de WhatsApp',
+              invert: false,
+            }).warning('Usa solo números, incluyendo el prefijo del país.'),
         }),
 
         defineField({
@@ -281,10 +294,7 @@ export const tavernInfo = defineType({
 
           validation: (Rule) =>
             Rule.required().uri({
-              scheme: [
-                'http',
-                'https',
-              ],
+              scheme: ['http', 'https'],
             }),
         }),
 
@@ -295,10 +305,7 @@ export const tavernInfo = defineType({
 
           validation: (Rule) =>
             Rule.required().uri({
-              scheme: [
-                'http',
-                'https',
-              ],
+              scheme: ['http', 'https'],
             }),
         }),
       ],
@@ -313,13 +320,9 @@ export const tavernInfo = defineType({
 
     prepare({title, email}) {
       return {
-        title:
-          title ||
-          'Información de la taberna',
+        title: title || 'Información de la taberna',
 
-        subtitle:
-          email ||
-          'Horario y contacto',
+        subtitle: email || 'Horario y contacto',
       }
     },
   },

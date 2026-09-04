@@ -23,7 +23,7 @@ export const ACTIVE_MENU_QUERY = `
       pdfEs.asset->url
     )
   }
-`
+`;
 
 export const BAR_SELECTION_QUERY = `
   *[_type == "barSelection"][0] {
@@ -89,31 +89,60 @@ export const BAR_SELECTION_QUERY = `
       )
     }
   }
-`
+`;
 
 export const TAVERN_INFO_QUERY = `
   *[_type == "tavernInfo"][0] {
     internalName,
 
-    "hours": {
-      "weekday": select(
-        $language == "en" => coalesce(hours.weekday.en, hours.weekday.es),
-        $language == "fr" => coalesce(hours.weekday.fr, hours.weekday.es),
-        hours.weekday.es
+   "hours": {
+    "weekday": {
+      "label": select(
+        $language == "en" => coalesce(
+          hours.weekday.label.en,
+          hours.weekday.label.es
+        ),
+        $language == "fr" => coalesce(
+          hours.weekday.label.fr,
+          hours.weekday.label.es
+        ),
+        hours.weekday.label.es
       ),
-
-      "saturday": select(
-        $language == "en" => coalesce(hours.saturday.en, hours.saturday.es),
-        $language == "fr" => coalesce(hours.saturday.fr, hours.saturday.es),
-        hours.saturday.es
-      ),
-
-      "sunday": select(
-        $language == "en" => coalesce(hours.sunday.en, hours.sunday.es),
-        $language == "fr" => coalesce(hours.sunday.fr, hours.sunday.es),
-        hours.sunday.es
-      )
+      "opens": hours.weekday.opens,
+      "closes": hours.weekday.closes
     },
+
+    "saturday": {
+      "label": select(
+        $language == "en" => coalesce(
+          hours.saturday.label.en,
+          hours.saturday.label.es
+        ),
+        $language == "fr" => coalesce(
+          hours.saturday.label.fr,
+          hours.saturday.label.es
+        ),
+        hours.saturday.label.es
+      ),
+      "opens": hours.saturday.opens,
+      "closes": hours.saturday.closes
+    },
+
+    "sunday": {
+      "label": select(
+        $language == "en" => coalesce(
+          hours.sunday.label.en,
+          hours.sunday.label.es
+        ),
+        $language == "fr" => coalesce(
+          hours.sunday.label.fr,
+          hours.sunday.label.es
+        ),
+        hours.sunday.label.es
+      ),
+      "closed": hours.sunday.closed
+    }
+  },
 
     "temporaryNotice": {
       "isVisible": temporaryNotice.isVisible == true,
@@ -144,7 +173,7 @@ export const TAVERN_INFO_QUERY = `
       "googleMapsUrl": contact.googleMapsUrl
     }
   }
-`
+`;
 
 export const BAR_GALLERY_QUERY = `
   *[_type == "barGallery"][0] {
@@ -182,7 +211,7 @@ export const BAR_GALLERY_QUERY = `
       }
     }
   }
-`
+`;
 
 export const SEO_SETTINGS_QUERY = `
   *[_type == "seoSettings"][0] {
@@ -234,4 +263,4 @@ export const SEO_SETTINGS_QUERY = `
       socialImageAlt.es
     )
   }
-`
+`;

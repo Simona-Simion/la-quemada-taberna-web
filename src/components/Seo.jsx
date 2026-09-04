@@ -3,7 +3,10 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { supportedLanguages } from '../i18n'
-import { getSeoSettings } from '../sanity/menuService'
+import {
+  getSeoSettings,
+  getTavernInfo,
+} from '../sanity/menuService'
 
 const fallbackSeo = {
   es: {
@@ -121,19 +124,30 @@ function Seo() {
     async function loadSeo() {
       const fallback =
         fallbackSeo[
-          currentLanguage
+        currentLanguage
         ]
 
       let remoteSeo = null
+      let tavernInfo = null
 
       try {
-        remoteSeo =
-          await getSeoSettings(
+        const [
+          seoSettings,
+          info,
+        ] = await Promise.all([
+          getSeoSettings(
             currentLanguage
-          )
+          ),
+          getTavernInfo(
+            currentLanguage
+          ),
+        ])
+
+        remoteSeo = seoSettings
+        tavernInfo = info
       } catch (error) {
         console.error(
-          'No se pudo cargar el SEO desde Sanity:',
+          'No se pudieron cargar los datos SEO desde Sanity:',
           error
         )
       }
@@ -225,7 +239,7 @@ function Seo() {
       setMeta(
         'og:locale',
         localeMap[
-          currentLanguage
+        currentLanguage
         ],
         true
       )
@@ -293,54 +307,42 @@ function Seo() {
         ],
 
         openingHoursSpecification: [
-          {
-            '@type':
-              'OpeningHoursSpecification',
+          ...(tavernInfo?.hours?.weekday?.opens &&
+            tavernInfo?.hours?.weekday?.closes
+            ? [
+              {
+                '@type':
+                  'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                ],
+                opens:
+                  tavernInfo.hours.weekday.opens,
+                closes:
+                  tavernInfo.hours.weekday.closes,
+              },
+            ]
+            : []),
 
-            dayOfWeek: [
-              'Tuesday',
-              'Wednesday',
-              'Thursday',
-            ],
-
-            opens:
-              '20:00',
-
-            closes:
-              '00:00',
-          },
-
-          {
-            '@type':
-              'OpeningHoursSpecification',
-
-            dayOfWeek: [
-              'Friday',
-              'Saturday',
-            ],
-
-            opens:
-              '12:00',
-
-            closes:
-              '16:00',
-          },
-
-          {
-            '@type':
-              'OpeningHoursSpecification',
-
-            dayOfWeek: [
-              'Friday',
-              'Saturday',
-            ],
-
-            opens:
-              '20:00',
-
-            closes:
-              '00:00',
-          },
+          ...(tavernInfo?.hours?.saturday?.opens &&
+            tavernInfo?.hours?.saturday?.closes
+            ? [
+              {
+                '@type':
+                  'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Saturday',
+                ],
+                opens:
+                  tavernInfo.hours.saturday.opens,
+                closes:
+                  tavernInfo.hours.saturday.closes,
+              },
+            ]
+            : []),
         ],
       }
 
