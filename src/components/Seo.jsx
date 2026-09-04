@@ -8,6 +8,11 @@ import {
   getTavernInfo,
 } from '../sanity/menuService'
 
+import {
+  getLegalPath,
+  resolveLegalPage,
+} from '../config/legalRoutes'
+
 const fallbackSeo = {
   es: {
     title:
@@ -108,6 +113,22 @@ function setCanonical(url) {
   )
 }
 
+function setAlternateLinks(links) {
+  document.head
+    .querySelectorAll('link[rel="alternate"][hreflang]')
+    .forEach((element) => element.remove())
+
+  links.forEach(({ language, url }) => {
+    const link = document.createElement('link')
+
+    link.setAttribute('rel', 'alternate')
+    link.setAttribute('hreflang', language)
+    link.setAttribute('href', url)
+
+    document.head.appendChild(link)
+  })
+}
+
 function Seo() {
   const { i18n } = useTranslation()
 
@@ -168,9 +189,62 @@ function Seo() {
         remoteSeo?.siteName?.trim() ||
         'La Quemada Taberna'
 
-      const canonicalUrl =
+      const baseUrl =
         remoteSeo?.canonicalUrl?.trim() ||
         window.location.origin
+
+      const normalizedBaseUrl =
+        baseUrl.replace(/\/+$/, '')
+
+      const currentPath =
+        window.location.pathname
+
+      const pathParts =
+        currentPath
+          .split('/')
+          .filter(Boolean)
+
+      const currentLegalSlug =
+        pathParts.length === 2
+          ? pathParts[1]
+          : null
+
+      const currentLegalPage =
+        currentLegalSlug
+          ? resolveLegalPage(
+            currentLanguage,
+            currentLegalSlug
+          )
+          : null
+
+      const canonicalPath =
+        currentLegalPage
+          ? getLegalPath(
+            currentLanguage,
+            currentLegalPage
+          )
+          : `/${currentLanguage}`
+
+      const canonicalUrl =
+        `${normalizedBaseUrl}${canonicalPath}`
+
+      const alternateLinks =
+        supportedLanguages.map(
+          (language) => ({
+            language,
+            url: currentLegalPage
+              ? `${normalizedBaseUrl}${getLegalPath(
+                language,
+                currentLegalPage
+              )}`
+              : `${normalizedBaseUrl}/${language}`,
+          })
+        )
+
+      alternateLinks.push({
+        language: 'x-default',
+        url: `${normalizedBaseUrl}/es`,
+      })
 
       const socialImage =
         remoteSeo?.socialImage?.trim() ||
@@ -192,6 +266,9 @@ function Seo() {
 
       setCanonical(
         canonicalUrl
+      )
+      setAlternateLinks(
+        alternateLinks
       )
 
       setMeta(

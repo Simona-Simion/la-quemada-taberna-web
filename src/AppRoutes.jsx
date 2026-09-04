@@ -15,6 +15,7 @@ import { resolveLegalPage } from './config/legalRoutes'
 import LegalNotice from './pages/legal/LegalNotice'
 import DataUsePage from './pages/legal/DataUsePage'
 import SiteStoragePage from './pages/legal/SiteStoragePage'
+import Seo from './components/Seo'
 
 function DefaultLanguageRedirect() {
   const savedLanguage = getSavedLanguage()
@@ -56,6 +57,7 @@ const legalPages = {
 
 function LocalizedLegalPage() {
   const { lang, legalSlug } = useParams()
+
   const pageKey = resolveLegalPage(lang, legalSlug)
 
   if (!pageKey) {
@@ -64,7 +66,12 @@ function LocalizedLegalPage() {
 
   const LegalPage = legalPages[pageKey]
 
-  return <LegalPage />
+  return (
+    <>
+      <Seo />
+      <LegalPage />
+    </>
+  )
 }
 
 function AppRoutes() {
