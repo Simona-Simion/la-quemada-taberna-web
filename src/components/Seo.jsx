@@ -42,6 +42,62 @@ const fallbackSeo = {
   },
 }
 
+const legalSeo = {
+  es: {
+    notice: {
+      title: 'Aviso legal | La Quemada Taberna',
+      description:
+        'Consulta el aviso legal de La Quemada Taberna y la información relativa al titular y uso del sitio web.',
+    },
+    privacy: {
+      title: 'Política de privacidad | La Quemada Taberna',
+      description:
+        'Consulta la política de privacidad de La Quemada Taberna y cómo se gestionan los datos personales en este sitio web.',
+    },
+    cookies: {
+      title: 'Política de cookies | La Quemada Taberna',
+      description:
+        'Consulta la política de cookies de La Quemada Taberna y la información sobre el uso de almacenamiento y tecnologías similares.',
+    },
+  },
+
+  en: {
+    notice: {
+      title: 'Legal notice | La Quemada Taberna',
+      description:
+        'Read the legal notice for La Quemada Taberna, including information about the website owner and terms of use.',
+    },
+    privacy: {
+      title: 'Privacy policy | La Quemada Taberna',
+      description:
+        'Read the privacy policy for La Quemada Taberna and how personal data is handled on this website.',
+    },
+    cookies: {
+      title: 'Cookie policy | La Quemada Taberna',
+      description:
+        'Read the cookie policy for La Quemada Taberna and information about storage and similar technologies used on this website.',
+    },
+  },
+
+  fr: {
+    notice: {
+      title: 'Mentions légales | La Quemada Taberna',
+      description:
+        'Consultez les mentions légales de La Quemada Taberna ainsi que les informations relatives au propriétaire et à l’utilisation du site.',
+    },
+    privacy: {
+      title: 'Politique de confidentialité | La Quemada Taberna',
+      description:
+        'Consultez la politique de confidentialité de La Quemada Taberna et la manière dont les données personnelles sont traitées sur ce site.',
+    },
+    cookies: {
+      title: 'Politique de cookies | La Quemada Taberna',
+      description:
+        'Consultez la politique de cookies de La Quemada Taberna et les informations sur le stockage et les technologies similaires utilisées sur ce site.',
+    },
+  },
+}
+
 const localeMap = {
   es: 'es_ES',
   en: 'en_GB',
@@ -177,13 +233,7 @@ function Seo() {
         return
       }
 
-      const title =
-        remoteSeo?.title?.trim() ||
-        fallback.title
 
-      const description =
-        remoteSeo?.description?.trim() ||
-        fallback.description
 
       const siteName =
         remoteSeo?.siteName?.trim() ||
@@ -217,6 +267,21 @@ function Seo() {
           )
           : null
 
+
+      const currentLegalSeo =
+        currentLegalPage
+          ? legalSeo[currentLanguage]?.[currentLegalPage]
+          : null
+
+      const title =
+        currentLegalSeo?.title ||
+        remoteSeo?.title?.trim() ||
+        fallback.title
+
+      const description =
+        currentLegalSeo?.description ||
+        remoteSeo?.description?.trim() ||
+        fallback.description
       const canonicalPath =
         currentLegalPage
           ? getLegalPath(

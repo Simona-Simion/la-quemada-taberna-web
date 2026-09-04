@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- INICIO -->
+  <url>
+    <loc>https://laquemadataberna.es/es</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/en</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/fr</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <!-- AVISO LEGAL -->
+  <url>
+    <loc>https://laquemadataberna.es/es/aviso-legal</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/aviso-legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/en/legal-notice</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/aviso-legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/aviso-legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <!-- PRIVACIDAD -->
+  <url>
+    <loc>https://laquemadataberna.es/es/privacidad</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/fr/confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <!-- COOKIES -->
+  <url>
+    <loc>https://laquemadataberna.es/es/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/en/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+  <url>
+    <loc>https://laquemadataberna.es/fr/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://laquemadataberna.es/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://laquemadataberna.es/en/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://laquemadataberna.es/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://laquemadataberna.es/es"/>
+  </url>
+
+</urlset>
